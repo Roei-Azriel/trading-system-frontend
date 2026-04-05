@@ -1,0 +1,12 @@
+.tradeLayout {
+  display: grid;
+  grid-template-columns: 320px minmax(700px, 1fr) 320px;
+  gap: 20px;
+  align-items: start;
+}
+
+.chartPanel {
+  height: 640px;
+  border-radius: 20px;
+  overflow: hidden;
+}

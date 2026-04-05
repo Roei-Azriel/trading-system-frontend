@@ -1,0 +1,119 @@
+.assetsSectionWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.assetsSectionCard {
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px 28px 12px;
+    border: 1px solid var(--border-subtle);
+    border-radius: 24px;
+    background: linear-gradient(180deg, rgba(30, 35, 41, 0.95), rgba(24, 26, 32, 0.92));
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.tableHeader,
+.assetRow {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.2fr 1.2fr 1fr;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.tableHeader {
+    margin-bottom: 8px;
+    padding: 0 0 14px;
+    color: var(--text-secondary);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.assetRow {
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.assetRow:last-child {
+    border-bottom: none;
+}
+
+.coinLogo {
+    width: 40px;
+    height: 40px; 
+}
+
+.coinCell {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.coinSymbol {
+    margin: 0;
+    font-size: 17px;
+}
+
+.coinPair {
+    margin: 4px 0 0;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.actionCell{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.metricStrong {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.metricSubtle {
+    margin: 4px 0 0;
+    color: var(--text-secondary);
+    font-size: 13px;
+}
+
+.changePositive {
+    color: var(--color-green-400);
+}
+
+.changeNegative {
+    color: var(--color-red-500);
+}
+
+.actionButton {
+    cursor: pointer;
+    border: 1px solid rgba(240, 185, 11, 0.22);
+    background: rgba(240, 185, 11, 0.08);
+    color: var(--text-primary);
+    padding: 10px 14px;
+    border-radius: 999px;
+    transition: background-color 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+
+.actionButton:hover {
+    background: rgba(240, 185, 11, 0.16);
+    border-color: rgba(240, 185, 11, 0.4);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+    .assetsSectionCard {
+        padding: 18px 18px 10px;
+        border-radius: 20px;
+        overflow-x: auto;
+    }
+
+    .tableHeader,
+    .assetRow {
+        min-width: 860px;
+    }
+}
