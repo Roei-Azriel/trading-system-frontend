@@ -1,0 +1,47 @@
+.assetsSectionWrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.assetsSectionCard {
+    width: 100%;
+    max-width: 1100px;
+    padding: 24px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+}
+
+.tableHeader,
+.assetRow {
+    display: grid;
+    grid-template-columns: 2fr 1.2fr 1.2fr 1fr;
+    align-items: center;
+    column-gap: 24px;
+}
+
+.tableHeader {
+    margin-bottom: 16px;
+}
+
+.assetRow {
+    padding: 16px 0;
+}
+
+.coinLogo {
+    width: 40px;
+    height: 40px; 
+}
+
+.coinCell {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.actionCell{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

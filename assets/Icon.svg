@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50" height="50" fill="none">
+  <title>TradeForge Icon</title>
+  <desc>Compact TF monogram icon optimized for 50x50 usage.</desc>
+
+  <!-- Top bar of T -->
+  <path d="M4 8H34L29.5 12.5H0z" fill="#F0B90B"/>
+  <!-- Upper right wing -->
+  <path d="M34 8L46 8.5L34.5 20L24 20.2z" fill="#F0B90B"/>
+
+  <!-- Main vertical stem -->
+  <path d="M8 15H18L10.5 40L3 31z" fill="#F0B90B"/>
+
+  <!-- F top bar -->
+  <path d="M16 15H37L31 21H14.5z" fill="#F0B90B"/>
+
+  <!-- F middle bar -->
+  <path d="M13 24H27L21.5 29.5H11.5z" fill="#F0B90B"/>
+
+  <!-- Lower diagonal point -->
+  <path d="M16 15H24L17.5 40L9.5 46z" fill="#F0B90B"/>
+</svg>
