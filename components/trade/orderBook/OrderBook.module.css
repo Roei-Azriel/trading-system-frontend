@@ -1,0 +1,46 @@
+.orderBook {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+}
+
+.orderBookHeader {
+    border : 1px solid silver; 
+    height: 36px;
+}
+.bids {
+    border: 1px solid silver;
+    height: 296px;
+}
+.lastPrice{
+    border: 1px solid silver;
+    height: 36px;
+}
+.asks{
+    border: 1px solid silver;
+    height: 296px;
+}
+.depthBar{
+    border: 1px solid silver;
+    height: 36px;
+}
+.OrderBookAsksSection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.priceColumn{
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+}
+.amountColumn{
+    width: 100%;
+    text-align: center;
+    padding-inline: 8px;
+}
+.totalColumn{
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+}
