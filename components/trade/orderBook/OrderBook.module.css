@@ -2,45 +2,154 @@
     display: flex;
     flex-direction: column;
     height: 700px;
+    background: #181a20;
+    border: 1px solid #2b3139;
+    border-radius: 14px;
+    overflow: hidden;
 }
 
 .orderBookHeader {
-    border : 1px solid silver; 
-    height: 36px;
+    display: flex;
+    align-items: center;
+    min-height: 54px;
+    padding: 0 16px;
+    border-bottom: 1px solid #2b3139;
 }
+
+.orderBookHeader h2 {
+    margin: 0;
+    color: #f5f5f5;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
 .bids {
-    border: 1px solid silver;
     height: 296px;
+    padding: 10px 0 0;
 }
+
 .lastPrice{
-    border: 1px solid silver;
+    border-top: 1px solid #2b3139;
+    border-bottom: 1px solid #2b3139;
     height: 36px;
 }
+
 .asks{
-    border: 1px solid silver;
     height: 296px;
+    padding: 10px 0 0;
 }
+
 .depthBar{
-    border: 1px solid silver;
-    height: 36px;
+    border-top: 1px solid #2b3139;
+    min-height: 36px;
+    padding: 8px 12px;
 }
-.OrderBookAsksSection{
+
+.orderBookColumnsHeader{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
+    min-height: 28px;
+    padding-bottom: 8px;
+    color: #848e9c;
+    font-size: 0.85rem;
+    line-height: 1;
 }
+
+.orderBookAskRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    min-height: 28px;
+    font-size: 0.95rem;
+    line-height: 1;
+    color: #eaecef;
+    font-variant-numeric: tabular-nums;
+}
+
+.OrderBookBidRow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    min-height: 28px;
+    font-size: 0.95rem;
+    line-height: 1;
+    color: #eaecef;
+    font-variant-numeric: tabular-nums;
+}
+
+.orderBookAskRow:hover{
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.OrderBookBidRow:hover{
+    background: rgba(255, 255, 255, 0.03);
+}
+
 .priceColumn{
     width: 100%;
     text-align: left;
-    padding-left: 10px;
+    padding-left: 16px;
 }
+
 .amountColumn{
     width: 100%;
     text-align: center;
-    padding-inline: 8px;
+    padding-inline: 10px;
 }
+
 .totalColumn{
     width: 100%;
     text-align: right;
-    padding-right: 10px;
+    padding-right: 16px;
+}
+
+.askPriceText{
+    color: #f6465d;
+    font-weight: 500;
+}
+
+.bidPriceText{
+    color: #0ecb81;
+    font-weight: 500;
+}
+
+.depthBarContent{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.depthBarTrack{
+    display: flex;
+    flex: 1;
+    height: 5px;
+    overflow: hidden;
+    border-radius: 999px;
+    background: #2b3139;
+}
+
+.bidDepthFill{
+    height: 100%;
+    background: #0ecb81;
+}
+
+.askDepthFill{
+    height: 100%;
+    background: #f6465d;
+}
+
+.bidDepthLabel{
+    color: #0ecb81;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.askDepthLabel{
+    color: #f6465d;
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1;
 }

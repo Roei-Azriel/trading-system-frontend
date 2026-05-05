@@ -1,11 +1,17 @@
+"use client";
+
 import Link from 'next/link';
 import Icon from '@/assets/Icon.svg';
 import accIcon from '@/assets/account-svgrepo-com.svg';
 import walletIcon from '@/assets/crypto-wallet-bitcoin-icon.svg';
 import Image from 'next/image';
 import classes from './Header.module.css';
+import { useState } from 'react';
+
 
 export default function Header(){
+
+    const [isAuthenticated,setIsAuthenticated] = useState(false);
 
     return(
     <header className={classes.header}>
@@ -31,7 +37,7 @@ export default function Header(){
             <Link href ="/wallet">
                 <Image className={classes.walletlogoImg} src ={walletIcon} alt = "wallet logo"/>
             </Link>
-            <Link href ="/account">
+            <Link href ="/auth">
                 <Image className={classes.acclogoImg} src ={accIcon} alt = "account logo"/>
             </Link>
         </div>

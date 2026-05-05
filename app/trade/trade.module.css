@@ -1,7 +1,6 @@
 .tradeLayout {
   display: grid;
   grid-template-columns: 320px minmax(700px, 1fr) 320px;
-  gap: 20px;
   align-items: start;
 }
 
@@ -9,4 +8,10 @@
   height: 640px;
   border-radius: 20px;
   overflow: hidden;
+}
+
+.rightColumn {
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  height: 700px;
 }

@@ -1,11 +1,12 @@
 import classes from './OrderBook.module.css';
-import { AskRow } from './orderBook.type';
-type OrderBookAskRowProps = {
-    assets : AskRow; 
+import { BidRow } from './orderBook.type';
+
+type OrderBookBidRowProps = {
+    assets : BidRow;
 }
 
-export default function OrderBookAskRow({assets} : OrderBookAskRowProps) {
-    
+export default function OrderBookBidRow({assets} : OrderBookBidRowProps) {
+
     const formattedPrice = assets.price.toFixed(2);
     const formattedAmount = assets.amount.toFixed(5);
 
@@ -17,8 +18,8 @@ export default function OrderBookAskRow({assets} : OrderBookAskRowProps) {
 
 
     return (
-         <div className={classes.orderBookAskRow}>
-            <div className={`${classes.priceColumn} ${classes.askPriceText}`}>{formattedPrice}</div>
+         <div className={classes.OrderBookBidRow}>
+            <div className={`${classes.priceColumn} ${classes.bidPriceText}`}>{formattedPrice}</div>
             <div className={classes.amountColumn}>{formattedAmount}</div>
             <div className={classes.totalColumn}>{formattedTotal}</div>
         </div>
